@@ -3,7 +3,8 @@ import type { Section, FlatQuestion } from "./types";
 import QuestionCard from "./components/QuestionCard";
 import Progress from "./components/Progress";
 
-function normalize(sections: Section[]): FlatQuestion[] {
+//NORMAL
+/* function normalize(sections: Section[]): FlatQuestion[] {
   const out: FlatQuestion[] = [];
   for (const sec of sections) {
     for (const q of sec.questions) {
@@ -29,7 +30,74 @@ function normalize(sections: Section[]): FlatQuestion[] {
     }
   }
   return out;
+} */
+
+// TODO AL AZAR
+function normalize(sections: Section[]): FlatQuestion[] {
+  // 👉 Barajar secciones
+  const shuffledSections = [...sections].sort(() => Math.random() - 0.5);
+
+  const out: FlatQuestion[] = [];
+  for (const sec of shuffledSections) {
+    for (const q of sec.questions) {
+      if (q.type === "multiple_choice") {
+        out.push({
+          id: q.id,
+          section: sec.section,
+          type: q.type,
+          text: q.question,
+          options: q.options,
+          correctIndex: q.correct_index
+        });
+      } else {
+        out.push({
+          id: q.id,
+          section: sec.section,
+          type: q.type,
+          text: q.statement,
+          options: ["Verdadero", "Falso"],
+          correctIndex: q.answer ? 0 : 1
+        });
+      }
+    }
+  }
+
+  return out;
 }
+
+//TEMAS AL AZAR
+/* function normalize(sections: Section[]): FlatQuestion[] {
+  // 👉 Barajar secciones
+  const shuffledSections = [...sections].sort(() => Math.random() - 0.5);
+
+  const out: FlatQuestion[] = [];
+  for (const sec of shuffledSections) {
+    for (const q of sec.questions) {
+      if (q.type === "multiple_choice") {
+        out.push({
+          id: q.id,
+          section: sec.section,
+          type: q.type,
+          text: q.question,
+          options: q.options,
+          correctIndex: q.correct_index
+        });
+      } else {
+        out.push({
+          id: q.id,
+          section: sec.section,
+          type: q.type,
+          text: q.statement,
+          options: ["Verdadero", "Falso"],
+          correctIndex: q.answer ? 0 : 1
+        });
+      }
+    }
+  }
+
+  return out;
+} */
+
 
 export default function App() {
   const [loading, setLoading] = React.useState<boolean>(true);
