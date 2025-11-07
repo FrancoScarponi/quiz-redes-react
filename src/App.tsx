@@ -34,11 +34,9 @@ import Progress from "./components/Progress";
 
 // TODO AL AZAR
 function normalize(sections: Section[]): FlatQuestion[] {
-  // 👉 Barajar secciones
-  const shuffledSections = [...sections].sort(() => Math.random() - 0.5);
-
   const out: FlatQuestion[] = [];
-  for (const sec of shuffledSections) {
+
+  for (const sec of sections) {
     for (const q of sec.questions) {
       if (q.type === "multiple_choice") {
         out.push({
@@ -62,7 +60,8 @@ function normalize(sections: Section[]): FlatQuestion[] {
     }
   }
 
-  return out;
+  // 👉 Barajar todas las preguntas
+  return out.sort(() => Math.random() - 0.5);
 }
 
 //TEMAS AL AZAR
