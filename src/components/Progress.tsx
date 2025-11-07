@@ -1,4 +1,11 @@
-export default function Progress({ correct, wrong, current, total }) {
+type Props = {
+  correct: number;
+  wrong: number;
+  current: number;
+  total: number;
+};
+
+export default function Progress({ correct, wrong, current, total }: Props) {
   const pct = Math.round((current / total) * 100);
 
   return (

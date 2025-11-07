@@ -1,10 +1,19 @@
 import React from "react";
+import type { FlatQuestion } from "../types";
 
-export default function QuestionCard({ q, index, total, onAnswered, goNext }) {
-  const [selected, setSelected] = React.useState(null);
-  const [checked, setChecked] = React.useState(false);
+type Props = {
+  q: FlatQuestion;
+  index: number;
+  total: number;
+  onAnswered: (isCorrect: boolean) => void;
+  goNext: () => void;
+};
 
-  const handleSelect = (i) => {
+export default function QuestionCard({ q, index, total, onAnswered, goNext }: Props) {
+  const [selected, setSelected] = React.useState<number | null>(null);
+  const [checked, setChecked] = React.useState<boolean>(false);
+
+  const handleSelect = (i: number) => {
     if (checked) return;
     setSelected(i);
     setChecked(true);
@@ -31,7 +40,7 @@ export default function QuestionCard({ q, index, total, onAnswered, goNext }) {
       <p className="mb-4 text-lg">{q.text}</p>
 
       <div className="space-y-2 mb-4">
-        {q.options.map((opt, i) => {
+        {q.options.map((opt: string, i: number) => {
           const isSel = selected === i;
           const isCorrectOpt = i === q.correctIndex;
 
@@ -41,7 +50,7 @@ export default function QuestionCard({ q, index, total, onAnswered, goNext }) {
           const wrongSty = "border-red-500 bg-red-500/10";
           const selSty = "border-sky-400 bg-sky-400/10";
 
-          let classes = base + " " + neutral;
+          let classes = `${base} ${neutral}`;
           if (!checked && isSel) classes = `${base} ${selSty}`;
           if (checked && isCorrectOpt) classes = `${base} ${correctSty}`;
           if (checked && isSel && !isCorrectOpt) classes = `${base} ${wrongSty}`;
