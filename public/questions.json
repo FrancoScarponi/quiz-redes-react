@@ -1,0 +1,1135 @@
+[
+  {
+    "title": "Preguntas Turno 18 a 20",
+    "section": "Protocolo IP y Protocolo Hello",
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple_choice",
+        "question": "¿Qué significa IP en redes de computadoras?",
+        "options": [
+          "Internet Page",
+          "Internet Protocol",
+          "Internal Program",
+          "Inter Process"
+        ],
+        "correct_index": 1,
+        "correct_option": "Internet Protocol"
+      },
+      {
+        "id": 2,
+        "type": "multiple_choice",
+        "question": "¿En qué capa del modelo OSI funciona el protocolo IP?",
+        "options": [
+          "Capa de transporte",
+          "Capa de red",
+          "Capa física",
+          "Capa de aplicación"
+        ],
+        "correct_index": 1,
+        "correct_option": "Capa de red"
+      },
+      {
+        "id": 3,
+        "type": "true_false",
+        "statement": "El protocolo IP garantiza que los paquetes lleguen en orden y sin errores.",
+        "answer": false
+      },
+      {
+        "id": 4,
+        "type": "multiple_choice",
+        "question": "¿Qué representa el campo TTL (Time To Live) en una cabecera IP?",
+        "options": [
+          "El tamaño del paquete",
+          "El tipo de aplicación",
+          "El número máximo de saltos antes de ser descartado",
+          "El tiempo de transmisión"
+        ],
+        "correct_index": 2,
+        "correct_option": "El número máximo de saltos antes de ser descartado"
+      },
+      {
+        "id": 5,
+        "type": "true_false",
+        "statement": "En IPv6 las direcciones son más largas que en IPv4.",
+        "answer": true
+      },
+      {
+        "id": 6,
+        "type": "multiple_choice",
+        "question": "¿Para qué sirve el protocolo Hello en los routers?",
+        "options": [
+          "Para enviar datos a los usuarios",
+          "Para traducir direcciones",
+          "Para asignar direcciones IP",
+          "Para descubrir y mantener vecinos en la red"
+        ],
+        "correct_index": 3,
+        "correct_option": "Para descubrir y mantener vecinos en la red"
+      },
+      {
+        "id": 7,
+        "type": "true_false",
+        "statement": "Si dos routers OSPF no intercambian mensajes Hello, no pueden ser vecinos.",
+        "answer": true
+      },
+      {
+        "id": 8,
+        "type": "multiple_choice",
+        "question": "¿Qué sucede si un router deja de recibir mensajes Hello de un vecino?",
+        "options": [
+          "Lo considera inalcanzable y recalcula rutas",
+          "Espera indefinidamente",
+          "Cierra su interfaz",
+          "Reinicia la red"
+        ],
+        "correct_index": 0,
+        "correct_option": "Lo considera inalcanzable y recalcula rutas"
+      },
+      {
+        "id": 9,
+        "type": "multiple_choice",
+        "question": "¿Qué información se incluye dentro de un mensaje Hello?",
+        "options": [
+          "Nombre del router y velocidad del enlace",
+          "Intervalos de envío y prioridad del router",
+          "Tamaño de la red",
+          "Tipo de cable usado"
+        ],
+        "correct_index": 1,
+        "correct_option": "Intervalos de envío y prioridad del router"
+      },
+      {
+        "id": 10,
+        "type": "multiple_choice",
+        "question": "¿Qué protocolo utiliza el mensaje Hello para formar vecindades?",
+        "options": ["HTTP", "FTP", "OSPF", "DNS"],
+        "correct_index": 2,
+        "correct_option": "OSPF"
+      }
+    ]
+  },
+
+  {
+    "section": "RIP, OSPF y PPP",
+    "questions": [
+      {
+        "id": 11,
+        "type": "multiple_choice",
+        "question": "¿Cuál es la métrica principal utilizada por el protocolo RIP para determinar la mejor ruta?",
+        "options": [
+          "Ancho de banda",
+          "Latencia del enlace",
+          "Cantidad de saltos",
+          "Costo del enlace"
+        ],
+        "correct_index": 2,
+        "correct_option": "Cantidad de saltos"
+      },
+      {
+        "id": 12,
+        "type": "multiple_choice",
+        "question": "¿Cuál de las siguientes afirmaciones describe correctamente a RIPv2 en comparación con RIPv1?",
+        "options": [
+          "Usa broadcast y no admite autenticación",
+          "Añade soporte para CIDR/VLSM y envía actualizaciones por multicast",
+          "Solo permite redes de clase A, B y C",
+          "Usa el puerto UDP 521 para IPv4"
+        ],
+        "correct_index": 1,
+        "correct_option": "Añade soporte para CIDR/VLSM y envía actualizaciones por multicast"
+      },
+      {
+        "id": 13,
+        "type": "true_false",
+        "statement": "PPP es capaz de encapsular múltiples protocolos de red simultáneamente, como IP, IPX o AppleTalk.",
+        "answer": true
+      },
+      {
+        "id": 14,
+        "type": "multiple_choice",
+        "question": "¿Qué algoritmo de enrutamiento utiliza OSPF para calcular la ruta más corta?",
+        "options": [
+          "Bellman-Ford",
+          "Dijkstra (SPF)",
+          "Floyd-Warshall",
+          "Path Vector"
+        ],
+        "correct_index": 1,
+        "correct_option": "Dijkstra (SPF)"
+      },
+      {
+        "id": 15,
+        "type": "multiple_choice",
+        "question": "En el protocolo PPP, ¿cuál de las siguientes fases se encarga de negociar parámetros como MTU, compresión o detección de bucles?",
+        "options": [
+          "Fase de autenticación",
+          "Fase de control de red (NCP)",
+          "Fase de control de enlace (LCP)",
+          "Fase de terminación"
+        ],
+        "correct_index": 2,
+        "correct_option": "Fase de control de enlace (LCP)"
+      },
+      {
+        "id": 16,
+        "type": "true_false",
+        "statement": "RIP usa una métrica basada en ancho de banda para elegir la mejor ruta.",
+        "answer": false
+      },
+      {
+        "id": 17,
+        "type": "multiple_choice",
+        "question": "¿Qué puerto UDP utiliza el protocolo RIP para el envío y recepción de mensajes?",
+        "options": ["23", "179", "520", "69"],
+        "correct_index": 2,
+        "correct_option": "520"
+      },
+      {
+        "id": 18,
+        "type": "multiple_choice",
+        "question": "¿Cuál de las siguientes afirmaciones describe correctamente al protocolo PPP?",
+        "options": [
+          "Solo funciona en redes LAN",
+          "Permite la conexión directa entre dos dispositivos y puede usar autenticación PAP o CHAP",
+          "Requiere direcciones IP estáticas en ambos extremos",
+          "No soporta encapsulación de IP"
+        ],
+        "correct_index": 1,
+        "correct_option": "Permite la conexión directa entre dos dispositivos y puede usar autenticación PAP o CHAP"
+      },
+      {
+        "id": 19,
+        "type": "multiple_choice",
+        "question": "En OSPF, ¿qué tipo de enrutador es responsable de reducir el tráfico en redes multiacceso al enviar los anuncios de estado de vínculo (LSA)?",
+        "options": [
+          "Router de frontera externa (ASBR)",
+          "Router interno",
+          "Router designado (DR)",
+          "Router de área"
+        ],
+        "correct_index": 2,
+        "correct_option": "Router designado (DR)"
+      },
+      {
+        "id": 20,
+        "type": "true_false",
+        "statement": "RIP usa una métrica basada en ancho de banda para elegir la mejor ruta.",
+        "answer": false
+      }
+    ]
+  },
+  {
+    "section": "GGP y EGP",
+    "questions": [
+      {
+        "id": 21,
+        "type": "multiple_choice",
+        "question": "¿Cuál era la función principal del protocolo GGP?",
+        "options": [
+          "Enviar correos entre hosts",
+          "Permitir que los gateways intercambien información de rutas entre sí",
+          "Controlar el acceso de usuarios en la red",
+          "Traducir direcciones IP a nombres de dominio"
+        ],
+        "correct_index": 1,
+        "correct_option": "Permitir que los gateways intercambien información de rutas entre sí"
+      },
+      {
+        "id": 22,
+        "type": "multiple_choice",
+        "question": "¿Qué métrica utilizaba GGP para determinar la mejor ruta?",
+        "options": [
+          "Ancho de banda",
+          "Retardo promedio",
+          "Conteo de saltos (Hop Count)",
+          "Tiempo de transmisión"
+        ],
+        "correct_index": 2,
+        "correct_option": "Conteo de saltos (Hop Count)"
+      },
+      {
+        "id": 23,
+        "type": "multiple_choice",
+        "question": "¿Qué diferencia principal existe entre Hop Count y TTL?",
+        "options": [
+          "Hop Count mide distancia lógica y TTL limita la vida del paquete",
+          "Ambos sirven para calcular la mejor ruta",
+          "TTL mide latencia y Hop Count mide velocidad",
+          "Hop Count elimina bucles y TTL selecciona el camino más corto"
+        ],
+        "correct_index": 0,
+        "correct_option": "Hop Count mide distancia lógica y TTL limita la vida del paquete"
+      },
+      {
+        "id": 24,
+        "type": "multiple_choice",
+        "question": "¿Qué tipo de mensaje de GGP se utiliza para mantener activa la conexión entre gateways?",
+        "options": ["Request", "Response", "Update", "KeepAlive"],
+        "correct_index": 3,
+        "correct_option": "KeepAlive"
+      },
+      {
+        "id": 25,
+        "type": "multiple_choice",
+        "question": "¿Por qué GGP tenía una convergencia lenta?",
+        "options": [
+          "Porque los routers calculaban rutas manualmente",
+          "Porque dependía de la propagación gradual de actualizaciones entre routers vecinos",
+          "Porque usaba una métrica basada en ancho de banda",
+          "Porque necesitaba autorización humana para actualizar tablas"
+        ],
+        "correct_index": 1,
+        "correct_option": "Porque dependía de la propagación gradual de actualizaciones entre routers vecinos"
+      },
+      {
+        "id": 26,
+        "type": "true_false",
+        "statement": "En EGP, los mensajes se envían directamente sobre IP, sin usar TCP ni UDP.",
+        "answer": true
+      },
+      {
+        "id": 27,
+        "type": "multiple_choice",
+        "question": "¿Qué información almacenaba una tabla de vector de distancia en GGP?",
+        "options": [
+          "Solo las direcciones IP de los hosts",
+          "Destino, distancia y próximo salto",
+          "Latencia promedio y pérdida de paquetes",
+          "Solo las redes directamente conectadas"
+        ],
+        "correct_index": 1,
+        "correct_option": "Destino, distancia y próximo salto"
+      },
+      {
+        "id": 28,
+        "type": "multiple_choice",
+        "question": "¿Qué protocolo reemplazó a GGP como mecanismo exterior de enrutamiento?",
+        "options": ["RIP", "BGP", "EGP", "OSPF"],
+        "correct_index": 1,
+        "correct_option": "BGP"
+      },
+      {
+        "id": 29,
+        "type": "multiple_choice",
+        "question": "En EGP, ¿qué tipo de mensajes se usaban para verificar que los routers vecinos seguían activos?",
+        "options": [
+          "Hello e I Heard You",
+          "Request y Response",
+          "Update y KeepAlive",
+          "Poll y Error"
+        ],
+        "correct_index": 0,
+        "correct_option": "Hello e I Heard You"
+      },
+      {
+        "id": 30,
+        "type": "multiple_choice",
+        "question": "¿Por qué EGP no funcionaba bien en topologías con múltiples conexiones o bucles?",
+        "options": [
+          "Porque no usaba TCP ni UDP",
+          "Porque solo admitía estructuras jerárquicas en forma de árbol",
+          "Porque no tenía campo de checksum",
+          "Porque todos los routers compartían las mismas tablas de rutas"
+        ],
+        "correct_index": 1,
+        "correct_option": "Porque solo admitía estructuras jerárquicas en forma de árbol"
+      }
+    ]
+  },
+  {
+    "section": "IGP, L2TP y FTP",
+    "questions": [
+      {
+        "id": 31,
+        "type": "true_false",
+        "statement": "FTP transmite credenciales y datos en texto plano, por lo que es inseguro en redes públicas.",
+        "answer": true
+      },
+      {
+        "id": 32,
+        "type": "multiple_choice",
+        "question": "¿Para qué sirve principalmente FTP?",
+        "options": [
+          "Enviar correos",
+          "Transferir archivos entre computadoras",
+          "Navegar páginas web",
+          "Encriptar discos"
+        ],
+        "correct_index": 1,
+        "correct_option": "Transferir archivos entre computadoras"
+      },
+      {
+        "id": 33,
+        "type": "true_false",
+        "statement": "En FTP las contraseñas se envían cifradas por defecto.",
+        "answer": false
+      },
+      {
+        "id": 34,
+        "type": "multiple_choice",
+        "question": "¿Quién inicia la conexión en el modelo FTP cliente-servidor?",
+        "options": ["El servidor", "El cliente"],
+        "correct_index": 1,
+        "correct_option": "El cliente"
+      },
+      {
+        "id": 35,
+        "type": "multiple_choice",
+        "question": "¿Qué significa IGP?",
+        "options": [
+          "Internet Gateway Protocol",
+          "Internal Gateway Process",
+          "Interior Gateway Protocol",
+          "Internet Global Protocol"
+        ],
+        "correct_index": 2,
+        "correct_option": "Interior Gateway Protocol"
+      },
+      {
+        "id": 36,
+        "type": "multiple_choice",
+        "question": "¿Cuál de los siguientes NO es un protocolo IGP?",
+        "options": ["OSPF", "RIP", "BGP", "EIGRP"],
+        "correct_index": 2,
+        "correct_option": "BGP"
+      },
+      {
+        "id": 37,
+        "type": "multiple_choice",
+        "question": "¿Qué función cumple un IGP?",
+        "options": [
+          "Crear túneles VPN entre redes",
+          "Cifrar los datos enviados por Internet",
+          "Determinar la mejor ruta dentro de una red",
+          "Controlar el acceso de usuarios externos"
+        ],
+        "correct_index": 2,
+        "correct_option": "Determinar la mejor ruta dentro de una red"
+      },
+      {
+        "id": 38,
+        "type": "multiple_choice",
+        "question": "¿Cuál es la principal función del protocolo L2TP?",
+        "options": [
+          "Cifrar los datos transmitidos entre cliente y servidor",
+          "Crear túneles virtuales para establecer redes privadas sobre Internet",
+          "Determinar la mejor ruta de transmisión en una red interna",
+          "Administrar el acceso de usuarios externos a una red"
+        ],
+        "correct_index": 1,
+        "correct_option": "Crear túneles virtuales para establecer redes privadas sobre Internet"
+      },
+      {
+        "id": 39,
+        "type": "multiple_choice",
+        "question": "¿Cuál de las siguientes afirmaciones sobre L2TP es correcta?",
+        "options": [
+          "L2TP cifra los datos de manera nativa",
+          "L2TP no puede combinarse con otros protocolos",
+          "L2TP necesita de IPsec para garantizar la seguridad y el cifrado",
+          "L2TP pertenece a la capa de aplicación del modelo OSI"
+        ],
+        "correct_index": 2,
+        "correct_option": "L2TP necesita de IPsec para garantizar la seguridad y el cifrado"
+      },
+      {
+        "id": 40,
+        "type": "true_false",
+        "statement": "El protocolo L2TP, por sí solo, cifra los datos transmitidos y ofrece protección contra ataques.",
+        "answer": false
+      }
+    ]
+  },
+  {
+    "section": "SMTP, SNMP e IPsec",
+    "questions": [
+      {
+        "id": 41,
+        "type": "multiple_choice",
+        "question": "¿En qué capa del modelo OSI se ubican los protocolos de gestión de red como SMTP y SNMP?",
+        "options": [
+          "Capa de enlace",
+          "Capa de aplicación",
+          "Capa de red",
+          "Capa de transporte"
+        ],
+        "correct_index": 1,
+        "correct_option": "Capa de aplicación"
+      },
+      {
+        "id": 42,
+        "type": "multiple_choice",
+        "question": "El protocolo SMTP se utiliza para:",
+        "options": [
+          "Recuperar correos desde el servidor",
+          "Enviar mensajes de correo electrónico",
+          "Sincronizar relojes de red",
+          "Analizar tráfico de red"
+        ],
+        "correct_index": 1,
+        "correct_option": "Enviar mensajes de correo electrónico"
+      },
+      {
+        "id": 43,
+        "type": "multiple_choice",
+        "question": "¿Cuál de los siguientes no es un comando básico de SMTP?",
+        "options": ["MAIL FROM", "RCPT TO", "DATA", "GETBULK"],
+        "correct_index": 3,
+        "correct_option": "GETBULK"
+      },
+      {
+        "id": 44,
+        "type": "multiple_choice",
+        "question": "¿Qué componente SMTP verifica encabezados y direcciones antes de enviar un mensaje?",
+        "options": ["MUA", "MTA", "MSA", "MDA"],
+        "correct_index": 2,
+        "correct_option": "MSA"
+      },
+      {
+        "id": 45,
+        "type": "multiple_choice",
+        "question": "El protocolo SNMP utiliza como protocolo de transporte a:",
+        "options": ["TCP", "UDP", "HTTP", "FTP"],
+        "correct_index": 1,
+        "correct_option": "UDP"
+      },
+      {
+        "id": 46,
+        "type": "multiple_choice",
+        "question": "Las comunidades SNMP sirven para:",
+        "options": [
+          "Cifrar datos con AES",
+          "Controlar el acceso a los dispositivos",
+          "Crear túneles entre routers",
+          "Traducir comandos SMTP"
+        ],
+        "correct_index": 1,
+        "correct_option": "Controlar el acceso a los dispositivos"
+      },
+      {
+        "id": 47,
+        "type": "multiple_choice",
+        "question": "¿Qué elemento SNMP envía notificaciones TRAP cuando ocurre un evento importante?",
+        "options": ["MIB", "Gestor SNMP", "Agente SNMP", "Router"],
+        "correct_index": 2,
+        "correct_option": "Agente SNMP"
+      },
+      {
+        "id": 48,
+        "type": "multiple_choice",
+        "question": "IPsec protege las comunicaciones a nivel de:",
+        "options": ["Aplicación", "Enlace", "Red", "Sesión"],
+        "correct_index": 2,
+        "correct_option": "Red"
+      },
+      {
+        "id": 49,
+        "type": "multiple_choice",
+        "question": "¿Qué modo de IPsec cifra solo los datos dentro del paquete IP?",
+        "options": ["Túnel", "Transporte", "Mixto", "Seguro"],
+        "correct_index": 1,
+        "correct_option": "Transporte"
+      },
+      {
+        "id": 50,
+        "type": "multiple_choice",
+        "question": "¿Qué tipo de ataque no protege IPsec?",
+        "options": ["Sniffing", "Spoofing", "Manipulación", "Phishing"],
+        "correct_index": 3,
+        "correct_option": "Phishing"
+      }
+    ]
+  },
+  {
+    "section": "DHCP, DNS y Telnet",
+    "questions": [
+      {
+        "id": 51,
+        "type": "multiple_choice",
+        "question": "¿Cuál es la principal razón por la que DHCP es fundamental en las redes modernas?",
+        "options": [
+          "Cifra el tráfico de red para mayor seguridad",
+          "Asigna direcciones IP automáticamente, simplificando la administración y evitando conflictos",
+          "Permite la resolución de nombres de dominio a direcciones IP"
+        ],
+        "correct_index": 1,
+        "correct_option": "Asigna direcciones IP automáticamente, simplificando la administración y evitando conflictos"
+      },
+      {
+        "id": 52,
+        "type": "multiple_choice",
+        "question": "¿Qué nombre recibe el proceso de 4 pasos mediante el cual un cliente obtiene una dirección IP de un servidor DHCP?",
+        "options": [
+          "DORA (Discover, Offer, Request, Acknowledge)",
+          "CRUD (Create, Read, Update, Delete)",
+          "POST (Power-On Self-Test)"
+        ],
+        "correct_index": 0,
+        "correct_option": "DORA (Discover, Offer, Request, Acknowledge)"
+      },
+      {
+        "id": 53,
+        "type": "multiple_choice",
+        "question": "¿Qué medida de seguridad se utiliza en los switches para evitar que un servidor DHCP falso asigne direcciones IP no autorizadas?",
+        "options": [
+          "NAT (Network Address Translation)",
+          "DHCP Snooping",
+          "VPN (Virtual Private Network)"
+        ],
+        "correct_index": 1,
+        "correct_option": "DHCP Snooping"
+      },
+      {
+        "id": 54,
+        "type": "multiple_choice",
+        "question": "¿Cuál es la función principal del DNS?",
+        "options": [
+          "Encriptar las comunicaciones de los navegadores web",
+          "Asignar direcciones IP a los dispositivos al conectarse a la red",
+          "Traducir nombres de dominio (ej. google.com) a direcciones IP numéricas"
+        ],
+        "correct_index": 2,
+        "correct_option": "Traducir nombres de dominio (ej. google.com) a direcciones IP numéricas"
+      },
+      {
+        "id": 55,
+        "type": "multiple_choice",
+        "question": "Dentro de la jerarquía de una consulta DNS, ¿qué tipo de servidor es el primero en ser contactado por un Resolver Recursivo para buscar un dominio como www.ejemplo.com?",
+        "options": [
+          "El Servidor TLD (.com)",
+          "El Servidor Autoritativo de ejemplo.com",
+          "El Servidor Raíz (.)"
+        ],
+        "correct_index": 2,
+        "correct_option": "El Servidor Raíz (.)"
+      },
+      {
+        "id": 56,
+        "type": "multiple_choice",
+        "question": "¿Cuál de los siguientes tipos de registros DNS se utiliza para especificar el servidor de correo electrónico de un dominio?",
+        "options": ["Registro A", "Registro CNAME", "Registro MX"],
+        "correct_index": 2,
+        "correct_option": "Registro MX"
+      },
+      {
+        "id": 57,
+        "type": "multiple_choice",
+        "question": "¿Qué vulnerabilidad del DNS permite a un atacante engañar a un Resolver para que acepte una dirección IP falsa y redirija a los usuarios a un sitio malicioso?",
+        "options": [
+          "DDoS (Distributed Denial of Service)",
+          "DNS Spoofing (Envenenamiento de Caché)",
+          "Brute Force Attack"
+        ],
+        "correct_index": 1,
+        "correct_option": "DNS Spoofing (Envenenamiento de Caché)"
+      },
+      {
+        "id": 58,
+        "type": "multiple_choice",
+        "question": "¿Cuál es la principal y más crítica vulnerabilidad de seguridad del protocolo TELNET?",
+        "options": [
+          "Utiliza puertos aleatorios que dificultan la configuración de firewalls",
+          "No cifra la comunicación, transmitiendo todo (incluyendo usuarios y contraseñas) en texto plano",
+          "Es propenso a ataques de fuerza bruta en su autenticación"
+        ],
+        "correct_index": 1,
+        "correct_option": "No cifra la comunicación, transmitiendo todo (incluyendo usuarios y contraseñas) en texto plano"
+      },
+      {
+        "id": 59,
+        "type": "multiple_choice",
+        "question": "¿Qué protocolo se considera el reemplazo moderno y seguro de TELNET para el acceso remoto a servidores?",
+        "options": [
+          "FTP (File Transfer Protocol)",
+          "HTTP (Hypertext Transfer Protocol)",
+          "SSH (Secure Shell)"
+        ],
+        "correct_index": 2,
+        "correct_option": "SSH (Secure Shell)"
+      },
+      {
+        "id": 60,
+        "type": "multiple_choice",
+        "question": "A pesar de sus vulnerabilidades, ¿en qué situación podría considerarse un uso limitado y justificado de TELNET hoy en día?",
+        "options": [
+          "Para acceder de forma segura a un servidor web en Internet",
+          "En entornos de red 100% aislados para configurar equipos 'legacy' o realizar pruebas básicas de conectividad",
+          "Para transferir archivos de forma cifrada entre dos equipos"
+        ],
+        "correct_index": 1,
+        "correct_option": "En entornos de red 100% aislados para configurar equipos 'legacy' o realizar pruebas básicas de conectividad"
+      }
+    ]
+  },
+  {
+    "section": "SSH / SSL-TLS",
+    "questions": [
+      {
+        "id": 61,
+        "type": "multiple_choice",
+        "question": "¿Cuál es el objetivo principal de los protocolos SSH y SSL/TLS?",
+        "options": [
+          "Aumentar la velocidad de transmisión de datos",
+          "Garantizar la seguridad y confidencialidad en las comunicaciones",
+          "Facilitar la instalación de software remoto",
+          "Permitir el acceso libre a los servidores"
+        ],
+        "correct_index": 1,
+        "correct_option": "Garantizar la seguridad y confidencialidad en las comunicaciones"
+      },
+      {
+        "id": 62,
+        "type": "multiple_choice",
+        "question": "En el modelo OSI, ¿en qué capa trabaja principalmente SSH?",
+        "options": [
+          "Capa de enlace de datos",
+          "Capa de transporte",
+          "Capa de aplicación",
+          "Capa de red"
+        ],
+        "correct_index": 2,
+        "correct_option": "Capa de aplicación"
+      },
+      {
+        "id": 63,
+        "type": "multiple_choice",
+        "question": "¿Qué reemplazó SSH al ser creado en 1995?",
+        "options": ["HTTPS", "FTP", "Telnet y rlogin", "SMTP"],
+        "correct_index": 2,
+        "correct_option": "Telnet y rlogin"
+      },
+      {
+        "id": 64,
+        "type": "multiple_choice",
+        "question": "En una conexión SSH, el comando 'ssh usuario@192.168.1.10' sirve para:",
+        "options": [
+          "Crear un túnel VPN automático",
+          "Ejecutar comandos locales cifrados",
+          "Conectarse de forma remota y segura a otro equipo",
+          "Instalar el protocolo SSH en un servidor"
+        ],
+        "correct_index": 2,
+        "correct_option": "Conectarse de forma remota y segura a otro equipo"
+      },
+      {
+        "id": 65,
+        "type": "multiple_choice",
+        "question": "¿Qué tipo de cifrado usa SSH para transmitir los datos una vez establecida la conexión?",
+        "options": [
+          "Cifrado asimétrico exclusivamente",
+          "Cifrado simétrico con una clave de sesión",
+          "Sin cifrado, solo autenticación",
+          "Cifrado por compresión de datos"
+        ],
+        "correct_index": 1,
+        "correct_option": "Cifrado simétrico con una clave de sesión"
+      },
+      {
+        "id": 66,
+        "type": "multiple_choice",
+        "question": "En SSL/TLS, el 'certificado digital' sirve para:",
+        "options": [
+          "Aumentar la velocidad del cifrado",
+          "Verificar la identidad del servidor o sitio web",
+          "Comprimir los datos antes del envío",
+          "Generar claves aleatorias de sesión"
+        ],
+        "correct_index": 1,
+        "correct_option": "Verificar la identidad del servidor o sitio web"
+      },
+      {
+        "id": 67,
+        "type": "multiple_choice",
+        "question": "¿Qué significa el 'candado' que aparece en un navegador web?",
+        "options": [
+          "Que el sitio está usando una VPN",
+          "Que el sitio tiene conexión HTTPS con SSL/TLS activo",
+          "Que la página está en modo privado",
+          "Que el servidor está encriptado localmente"
+        ],
+        "correct_index": 1,
+        "correct_option": "Que el sitio tiene conexión HTTPS con SSL/TLS activo"
+      },
+      {
+        "id": 68,
+        "type": "multiple_choice",
+        "question": "¿Cuál de las siguientes afirmaciones describe mejor la diferencia entre SSH y SSL/TLS?",
+        "options": [
+          "SSH se usa en navegadores y SSL/TLS en servidores",
+          "SSH cifra el acceso remoto y SSL/TLS cifra la navegación web",
+          "Ambos protocolos funcionan exactamente igual",
+          "SSL/TLS reemplazó a SSH en versiones modernas"
+        ],
+        "correct_index": 1,
+        "correct_option": "SSH cifra el acceso remoto y SSL/TLS cifra la navegación web"
+      },
+      {
+        "id": 69,
+        "type": "multiple_choice",
+        "question": "¿Qué puerto usa por defecto el protocolo SSH?",
+        "options": ["22", "25", "80", "443"],
+        "correct_index": 0,
+        "correct_option": "22"
+      },
+      {
+        "id": 70,
+        "type": "multiple_choice",
+        "question": "¿Cuál de los siguientes problemas puede ocurrir si no se usan SSH o SSL/TLS?",
+        "options": [
+          "Conexiones más rápidas",
+          "Pérdida de paquetes",
+          "Interceptación o robo de datos (ataques MITM)",
+          "Duplicación de direcciones IP"
+        ],
+        "correct_index": 2,
+        "correct_option": "Interceptación o robo de datos (ataques MITM)"
+      }
+    ]
+  },
+  {
+    "section": "VPN / VLAN",
+    "questions": [
+      {
+        "id": 71,
+        "type": "multiple_choice",
+        "question": "¿Cuál es el principal objetivo de una VPN?",
+        "options": [
+          "Aumentar la velocidad de la conexión a Internet",
+          "Dividir una red en segmentos lógicos",
+          "Extender una red privada sobre una red pública de forma segura",
+          "Compartir archivos entre usuarios sin cifrado"
+        ],
+        "correct_index": 2,
+        "correct_option": "Extender una red privada sobre una red pública de forma segura"
+      },
+      {
+        "id": 72,
+        "type": "multiple_choice",
+        "question": "¿Qué función cumple el 'túnel' en una conexión VPN?",
+        "options": [
+          "Dividir el tráfico de red",
+          "Cifrar y proteger los datos transmitidos",
+          "Conectar switches de diferentes VLAN",
+          "Detectar intrusos en la red"
+        ],
+        "correct_index": 1,
+        "correct_option": "Cifrar y proteger los datos transmitidos"
+      },
+      {
+        "id": 73,
+        "type": "multiple_choice",
+        "question": "¿Qué protocolo usa el ISP para crear VPN mediante rutas separadas?",
+        "options": ["IPsec", "MPLS", "SSL", "PPTP"],
+        "correct_index": 1,
+        "correct_option": "MPLS"
+      },
+      {
+        "id": 74,
+        "type": "multiple_choice",
+        "question": "¿Qué ventaja ofrece una VPN frente a las líneas privadas alquiladas?",
+        "options": [
+          "Mayor velocidad sin cifrado",
+          "Soluciones más económicas y mayor flexibilidad",
+          "No requiere conexión a Internet",
+          "No necesita configuración inicial"
+        ],
+        "correct_index": 1,
+        "correct_option": "Soluciones más económicas y mayor flexibilidad"
+      },
+      {
+        "id": 75,
+        "type": "multiple_choice",
+        "question": "¿Qué tipo de VPN conecta dos o más redes completas entre sí?",
+        "options": [
+          "VPN PPTP",
+          "VPN de acceso remoto",
+          "VPN de sitio a sitio",
+          "VPN SSL"
+        ],
+        "correct_index": 2,
+        "correct_option": "VPN de sitio a sitio"
+      },
+      {
+        "id": 76,
+        "type": "multiple_choice",
+        "question": "¿Cuál es una desventaja de las VPN?",
+        "options": [
+          "No cifran los datos",
+          "Suelen reducir la velocidad de conexión",
+          "No permiten acceso remoto",
+          "No funcionan con Internet"
+        ],
+        "correct_index": 1,
+        "correct_option": "Suelen reducir la velocidad de conexión"
+      },
+      {
+        "id": 77,
+        "type": "multiple_choice",
+        "question": "¿Qué es una VLAN?",
+        "options": [
+          "Una conexión segura a Internet",
+          "Una red virtual que segmenta lógicamente una red física",
+          "Un protocolo de cifrado de datos",
+          "Un servicio de Internet del ISP"
+        ],
+        "correct_index": 1,
+        "correct_option": "Una red virtual que segmenta lógicamente una red física"
+      },
+      {
+        "id": 78,
+        "type": "multiple_choice",
+        "question": "¿Qué ventaja principal ofrece una VLAN?",
+        "options": [
+          "Cifrar los datos en tránsito",
+          "Aumentar el ancho de banda",
+          "Mejorar la seguridad y el rendimiento interno de la red",
+          "Permitir acceso remoto desde cualquier lugar"
+        ],
+        "correct_index": 2,
+        "correct_option": "Mejorar la seguridad y el rendimiento interno de la red"
+      },
+      {
+        "id": 79,
+        "type": "multiple_choice",
+        "question": "¿Qué se necesita para configurar una red VLAN?",
+        "options": [
+          "Routers con IP pública",
+          "Switches administrables y tablas de configuración",
+          "Firewalls con soporte IPsec",
+          "Conexión a Internet de alta velocidad"
+        ],
+        "correct_index": 1,
+        "correct_option": "Switches administrables y tablas de configuración"
+      },
+      {
+        "id": 80,
+        "type": "multiple_choice",
+        "question": "¿Cuál es la principal diferencia entre VPN y VLAN?",
+        "options": [
+          "La VPN se usa en redes internas, y la VLAN en redes públicas",
+          "La VPN busca privacidad en redes públicas, y la VLAN organización dentro de redes privadas",
+          "La VLAN reemplaza el cifrado de la VPN",
+          "Ambas tecnologías tienen exactamente la misma función"
+        ],
+        "correct_index": 1,
+        "correct_option": "La VPN busca privacidad en redes públicas, y la VLAN organización dentro de redes privadas"
+      }
+    ]
+  },
+  {
+    "section": "TCP - NTP",
+    "questions": [
+      {
+        "id": 81,
+        "type": "true_false",
+        "statement": "TCP garantiza entrega fiable y en orden de los datos y es orientado a la conexión.",
+        "answer": true
+      },
+      {
+        "id": 82,
+        "type": "true_false",
+        "statement": "NTP utiliza por defecto el puerto TCP 123 para su comunicación.",
+        "answer": false
+      },
+      {
+        "id": 83,
+        "type": "true_false",
+        "statement": "En el encabezado TCP, el Número de Secuencia y el Número de Reconocimiento son campos clave para asegurar el orden y la confiabilidad.",
+        "answer": true
+      },
+      {
+        "id": 84,
+        "type": "true_false",
+        "statement": "TCP por sí solo no cifra el tráfico; para confidencialidad debe combinarse con TLS/SSL.",
+        "answer": true
+      },
+      {
+        "id": 85,
+        "type": "true_false",
+        "statement": "chrony se presenta como una alternativa moderna a ntpd, especialmente útil en entornos virtualizados.",
+        "answer": true
+      },
+      {
+        "id": 86,
+        "type": "multiple_choice",
+        "question": "¿Cuál es el puerto estándar usado por NTP?",
+        "options": ["UDP 53", "UDP 123", "TCP 80", "TCP 443"],
+        "correct_index": 1,
+        "correct_option": "UDP 123"
+      },
+      {
+        "id": 87,
+        "type": "multiple_choice",
+        "question": "¿Qué mecanismo describe el establecimiento de conexión en TCP?",
+        "options": [
+          "Handshake de dos vías",
+          "Saludo de tres vías (three-way handshake)",
+          "Intercambio T1–T4",
+          "ARP request/reply"
+        ],
+        "correct_index": 1,
+        "correct_option": "Saludo de tres vías (three-way handshake)"
+      },
+      {
+        "id": 88,
+        "type": "multiple_choice",
+        "question": "¿Cuál de las siguientes es una característica de TCP (no de UDP)?",
+        "options": [
+          "Sin conexión",
+          "Mínima sobrecarga",
+          "Control de flujo y congestión",
+          "Entrega no ordenada"
+        ],
+        "correct_index": 2,
+        "correct_option": "Control de flujo y congestión"
+      },
+      {
+        "id": 89,
+        "type": "multiple_choice",
+        "question": "En NTP, ¿qué describe mejor la jerarquía de estratos?",
+        "options": [
+          "Clientes primero, luego servidores",
+          "Todos los nodos son estrato 1",
+          "Relojes de referencia (estrato 0) → servidores primarios (estrato 1) → secundarios (estrato 2) → niveles inferiores (3+)",
+          "No existen estratos en NTP"
+        ],
+        "correct_index": 2,
+        "correct_option": "Relojes de referencia (estrato 0) → servidores primarios (estrato 1) → secundarios (estrato 2) → niveles inferiores (3+)"
+      },
+      {
+        "id": 90,
+        "type": "multiple_choice",
+        "question": "¿Cuál de estas es una buena práctica para NTP en producción?",
+        "options": [
+          "Usar un único servidor para simplificar",
+          "Deshabilitar autenticación para reducir latencia",
+          "Bloquear el puerto 123/UDP en el firewall",
+          "Configurar múltiples servidores y habilitar autenticación donde sea crítico"
+        ],
+        "correct_index": 3,
+        "correct_option": "Configurar múltiples servidores y habilitar autenticación donde sea crítico"
+      }
+    ]
+  },
+  {
+    "section": "ARP, RARP e ICMP",
+    "questions": [
+      {
+        "id": 91,
+        "type": "multiple_choice",
+        "question": "¿Cuál es la función principal del Protocolo de Resolución de Direcciones (ARP)?",
+        "options": [
+          "Comprobar la conectividad entre dos hosts en diferentes redes",
+          "Descubrir la dirección MAC de un dispositivo a partir de su dirección IP",
+          "Asignar direcciones IP a los dispositivos en una red local",
+          "Traducir un nombre de dominio (URL) a una dirección IP"
+        ],
+        "correct_index": 1,
+        "correct_option": "Descubrir la dirección MAC de un dispositivo a partir de su dirección IP"
+      },
+      {
+        "id": 92,
+        "type": "multiple_choice",
+        "question": "En un mecanismo de solicitud y respuesta ARP, ¿cuál es la dirección MAC de destino utilizada en el mensaje de Solicitud ARP?",
+        "options": [
+          "La dirección MAC del host de destino",
+          "Una dirección de broadcast (FF:FF:FF:FF:FF:FF)",
+          "Una dirección IP de destino específica",
+          "La dirección MAC del router de la red"
+        ],
+        "correct_index": 1,
+        "correct_option": "Una dirección de broadcast (FF:FF:FF:FF:FF:FF)"
+      },
+      {
+        "id": 93,
+        "type": "multiple_choice",
+        "question": "¿Cuál es la principal vulnerabilidad de seguridad de ARP que lo hace susceptible a ataques de 'spoofing'?",
+        "options": [
+          "La falta de cifrado en los mensajes ARP",
+          "Que opera bajo un modelo de 'confianza ciega' sin autenticación",
+          "La necesidad de una caché ARP en cada dispositivo",
+          "El uso de la dirección MAC de broadcast para las solicitudes"
+        ],
+        "correct_index": 1,
+        "correct_option": "Que opera bajo un modelo de 'confianza ciega' sin autenticación"
+      },
+      {
+        "id": 94,
+        "type": "multiple_choice",
+        "question": "¿Para qué se utiliza la caché ARP en los sistemas operativos?",
+        "options": [
+          "Para almacenar las contraseñas y credenciales de acceso a la red",
+          "Para almacenar las asociaciones IP-MAC y evitar enviar una solicitud ARP por cada paquete",
+          "Para almacenar las direcciones MAC de todos los hosts en internet",
+          "Para almacenar los paquetes IP que no se han podido entregar"
+        ],
+        "correct_index": 1,
+        "correct_option": "Para almacenar las asociaciones IP-MAC y evitar enviar una solicitud ARP por cada paquete"
+      },
+      {
+        "id": 95,
+        "type": "multiple_choice",
+        "question": "En la mitigación de ataques de ARP Spoofing, ¿Cuál es el papel del 'DHCP Snooping'?",
+        "options": [
+          "Actuar como un firewall de Capa 2 para crear una tabla de enlaces IP-MAC legítimos",
+          "Limitar la cantidad de solicitudes ARP que un host puede enviar",
+          "Enviar mensajes ARP falsos para confundir a los atacantes",
+          "Bloquear todos los paquetes ARP que se reciben en la red"
+        ],
+        "correct_index": 0,
+        "correct_option": "Actuar como un firewall de Capa 2 para crear una tabla de enlaces IP-MAC legítimos"
+      },
+      {
+        "id": 96,
+        "type": "multiple_choice",
+        "question": "¿Qué problema resolvió el RARP en las estaciones de trabajo?",
+        "options": ["Latencia", "Falta de memoria", "Seguridad", "TCP/IP"],
+        "correct_index": 3,
+        "correct_option": "TCP/IP"
+      },
+      {
+        "id": 97,
+        "type": "multiple_choice",
+        "question": "¿Para qué sirve principalmente el protocolo ICMP?",
+        "options": [
+          "Para enviar correos electrónicos",
+          "Para compartir archivos entre computadoras",
+          "Para avisar errores y diagnosticar problemas en la red",
+          "Para asignar direcciones IP automáticamente"
+        ],
+        "correct_index": 2,
+        "correct_option": "Para avisar errores y diagnosticar problemas en la red"
+      },
+      {
+        "id": 98,
+        "type": "multiple_choice",
+        "question": "¿En qué capa del modelo OSI trabaja ICMP?",
+        "options": ["Aplicación", "Transporte", "Red", "Enlace de datos"],
+        "correct_index": 2,
+        "correct_option": "Red"
+      },
+      {
+        "id": 99,
+        "type": "multiple_choice",
+        "question": "¿Cuál de estas herramientas usa ICMP para funcionar?",
+        "options": ["Ping", "FTP", "HTTP", "SSH"],
+        "correct_index": 0,
+        "correct_option": "Ping"
+      },
+      {
+        "id": 100,
+        "type": "multiple_choice",
+        "question": "¿Qué cambio importante trajo ICMPv6 respecto de ICMPv4?",
+        "options": [
+          "Desaparece el ping",
+          "Ahora también reemplaza al protocolo ARP mediante el NDP",
+          "ICMPv6 solo funciona en redes locales",
+          "ICMPv6 elimina los mensajes de error"
+        ],
+        "correct_index": 1,
+        "correct_option": "Ahora también reemplaza al protocolo ARP mediante el NDP"
+      }
+    ]
+  }
+]
