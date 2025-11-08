@@ -921,94 +921,115 @@
     "section": "TCP - NTP",
     "questions": [
       {
-        "id": 81,
-        "type": "true_false",
-        "statement": "TCP garantiza entrega fiable y en orden de los datos y es orientado a la conexión.",
-        "answer": true
+        "id": 1,
+        "type": "multiple_choice",
+        "question": "¿Cuál es la función principal de NTP (Network Time Protocol)?",
+        "options": [
+          "Asegurar que los datos viajen en orden y sin errores",
+          "Sincronizar los relojes de los dispositivos en una red con precisión",
+          "Establecer conexiones seguras entre dos clientes",
+          "Administrar la transmisión de audio y video en tiempo real"
+        ],
+        "correct_index": 1,
+        "correct_option": "Sincronizar los relojes de los dispositivos en una red con precisión"
       },
       {
-        "id": 82,
+        "id": 2,
+        "type": "multiple_choice",
+        "question": "Un banco utiliza NTP principalmente para:",
+        "options": [
+          "Reducir el consumo de ancho de banda en la red",
+          "Asegurar que las transacciones tengan registros o sellos de tiempo correctos",
+          "Mejorar la velocidad de conexión de los cajeros automáticos",
+          "Sincronizar la reproducción de videos de seguridad"
+        ],
+        "correct_index": 1,
+        "correct_option": "Asegurar que las transacciones tengan registros o sellos de tiempo correctos"
+      },
+      {
+        "id": 3,
+        "type": "multiple_choice",
+        "question": "¿Cuál es el objetivo principal del protocolo TSP (Time Stamping Protocol)?",
+        "options": [
+          "Sincronizar los relojes de todos los dispositivos en una red local",
+          "Acelerar la transmisión de datos entre servidores",
+          "Certificar de forma confiable la fecha y hora exacta en que ocurre un evento o se crea un documento digital",
+          "Controlar la velocidad de los enlaces en redes corporativas"
+        ],
+        "correct_index": 2,
+        "correct_option": "Certificar de forma confiable la fecha y hora exacta en que ocurre un evento o se crea un documento digital"
+      },
+      {
+        "id": 4,
         "type": "true_false",
-        "statement": "NTP utiliza por defecto el puerto TCP 123 para su comunicación.",
+        "statement": "El protocolo NTP se utiliza únicamente en redes locales y no puede sincronizar relojes a través de Internet",
         "answer": false
       },
       {
-        "id": 83,
-        "type": "true_false",
-        "statement": "En el encabezado TCP, el Número de Secuencia y el Número de Reconocimiento son campos clave para asegurar el orden y la confiabilidad.",
-        "answer": true
-      },
-      {
-        "id": 84,
-        "type": "true_false",
-        "statement": "TCP por sí solo no cifra el tráfico; para confidencialidad debe combinarse con TLS/SSL.",
-        "answer": true
-      },
-      {
-        "id": 85,
-        "type": "true_false",
-        "statement": "chrony se presenta como una alternativa moderna a ntpd, especialmente útil en entornos virtualizados.",
-        "answer": true
-      },
-      {
-        "id": 86,
+        "id": 5,
         "type": "multiple_choice",
-        "question": "¿Cuál es el puerto estándar usado por NTP?",
-        "options": ["UDP 53", "UDP 123", "TCP 80", "TCP 443"],
-        "correct_index": 1,
-        "correct_option": "UDP 123"
-      },
-      {
-        "id": 87,
-        "type": "multiple_choice",
-        "question": "¿Qué mecanismo describe el establecimiento de conexión en TCP?",
+        "question": "Un ejemplo práctico del uso de TSP es:",
         "options": [
-          "Handshake de dos vías",
-          "Saludo de tres vías (three-way handshake)",
-          "Intercambio T1–T4",
-          "ARP request/reply"
+          "Validar la hora exacta de una firma digital en un contrato electrónico",
+          "Sincronizar servidores dentro de un centro de datos",
+          "Ajustar la hora del sistema operativo automáticamente",
+          "Calcular la latencia entre dos equipos en una red"
+        ],
+        "correct_index": 0,
+        "correct_option": "Validar la hora exacta de una firma digital en un contrato electrónico"
+      },
+      {
+        "id": 6,
+        "type": "multiple_choice",
+        "question": "¿Cuál de las siguientes afirmaciones describe correctamente la arquitectura del protocolo NTP?",
+        "options": [
+          "NTP utiliza una estructura jerárquica de servidores organizados en estratos (strata)",
+          "NTP funciona únicamente en redes locales y no es escalable",
+          "NTP sincroniza relojes sin considerar el retardo de red",
+          "NTP no permite la conexión con relojes de referencia"
+        ],
+        "correct_index": 0,
+        "correct_option": "NTP utiliza una estructura jerárquica de servidores organizados en estratos (strata)"
+      },
+      {
+        "id": 7,
+        "type": "multiple_choice",
+        "question": "¿Qué componente de NTP determina la cercanía a la fuente original de tiempo?",
+        "options": [
+          "El nivel de sincronización (sync level)",
+          "El número de estrato (stratum)",
+          "El reloj interno del cliente",
+          "El tiempo de retardo medido en milisegundos"
         ],
         "correct_index": 1,
-        "correct_option": "Saludo de tres vías (three-way handshake)"
+        "correct_option": "El número de estrato (stratum)"
       },
       {
-        "id": 88,
+        "id": 8,
         "type": "multiple_choice",
-        "question": "¿Cuál de las siguientes es una característica de TCP (no de UDP)?",
+        "question": "¿Qué protocolo de transporte utiliza NTP para el envío de sus mensajes?",
+        "options": ["TCP", "ICMP", "UDP", "HTTP"],
+        "correct_index": 2,
+        "correct_option": "UDP"
+      },
+      {
+        "id": 9,
+        "type": "true_false",
+        "statement": "El TSP surgió después del NTP como su reemplazo moderno para mejorar la precisión",
+        "answer": false
+      },
+      {
+        "id": 10,
+        "type": "multiple_choice",
+        "question": "¿Cuál es una característica fundamental del NTPv4 respecto a versiones anteriores?",
         "options": [
-          "Sin conexión",
-          "Mínima sobrecarga",
-          "Control de flujo y congestión",
-          "Entrega no ordenada"
+          "Eliminar la compatibilidad con IPv4",
+          "Solo puede usarse en sistemas Unix",
+          "Introdujo soporte para IPv6 y mejor precisión",
+          "Ya no utiliza estructura jerárquica"
         ],
         "correct_index": 2,
-        "correct_option": "Control de flujo y congestión"
-      },
-      {
-        "id": 89,
-        "type": "multiple_choice",
-        "question": "En NTP, ¿qué describe mejor la jerarquía de estratos?",
-        "options": [
-          "Clientes primero, luego servidores",
-          "Todos los nodos son estrato 1",
-          "Relojes de referencia (estrato 0) → servidores primarios (estrato 1) → secundarios (estrato 2) → niveles inferiores (3+)",
-          "No existen estratos en NTP"
-        ],
-        "correct_index": 2,
-        "correct_option": "Relojes de referencia (estrato 0) → servidores primarios (estrato 1) → secundarios (estrato 2) → niveles inferiores (3+)"
-      },
-      {
-        "id": 90,
-        "type": "multiple_choice",
-        "question": "¿Cuál de estas es una buena práctica para NTP en producción?",
-        "options": [
-          "Usar un único servidor para simplificar",
-          "Deshabilitar autenticación para reducir latencia",
-          "Bloquear el puerto 123/UDP en el firewall",
-          "Configurar múltiples servidores y habilitar autenticación donde sea crítico"
-        ],
-        "correct_index": 3,
-        "correct_option": "Configurar múltiples servidores y habilitar autenticación donde sea crítico"
+        "correct_option": "Introdujo soporte para IPv6 y mejor precisión"
       }
     ]
   },
